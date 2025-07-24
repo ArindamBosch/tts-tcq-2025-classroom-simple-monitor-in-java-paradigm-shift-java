@@ -2,19 +2,19 @@ package vitals;
 
 public class Main {
 
-     public static boolean isTemperatureOk(float temperature) {
+     static boolean isTemperatureOk(float temperature) {
         return temperature >= 0 && temperature <= 45;
     }
 
-    public static boolean isSocOk(float soc) {
+    static boolean isSocOk(float soc) {
         return soc >= 20 && soc <= 80;
     }
 
-    public static boolean isChargeRateOk(float chargeRate) {
+    static boolean isChargeRateOk(float chargeRate) {
         return chargeRate <= 0.8;
     }
 
-    public static boolean batteryIsOk(float temperature, float soc, float chargeRate) {
+    static boolean batteryIsOk(float temperature, float soc, float chargeRate) {
         boolean tempOk = isTemperatureOk(temperature);
         boolean socOk = isSocOk(soc);
         boolean chargeRateOk = isChargeRateOk(chargeRate);
